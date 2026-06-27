@@ -18,6 +18,36 @@ PALETTES: dict[str, list[str]] = {
     "arcade": ["#101820", "#FEE715", "#FA26A0", "#05DFD7", "#A3F7BF", "#FFFFFF"],
     "miami": ["#11151C", "#00F5D4", "#F15BB5", "#FEE440", "#9B5DE5", "#FFFFFF"],
     "mono": ["#FFFFFF", "#000000"],
+    "retro70s": [
+        "#5B1E1E",  # dark wine red
+        "#8C2F39",  # warm red
+        "#C46A2D",  # burnt orange
+        "#E09F3E",  # mustard
+        "#EAD2AC",  # beige
+        "#7A4E2D",  # brown
+    ],
+    "earthwave": [
+        "#6D0F1B",  # dark burgundy
+        "#A71D31",  # wine red
+        "#D8572A",  # orange-red
+        "#F2A541",  # retro orange
+        "#F7D08A",  # warm beige
+    ],
+    "flowerpower": [
+        "#A63A50",  # dusty magenta
+        "#F27F3D",  # retro orange
+        "#F2C14E",  # mustard yellow
+        "#F7E3AF",  # cream beige
+        "#D97D93",  # soft pink
+        "#7B2D26",  # dark brown-red
+    ],
+    "psychedelic70s": [
+        "#5F0F40",  # deep purple
+        "#9A031E",  # wine red
+        "#FB8B24",  # orange
+        "#E36414",  # burnt orange
+        "#F1E9DA",  # cream
+    ],
 }
 
 

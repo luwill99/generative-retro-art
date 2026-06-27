@@ -48,7 +48,7 @@ def generate_artworks(styles: list[str], count: int, seed: int, output: Path, co
     for index in range(count):
         style = styles[index % len(styles)]
         artwork_seed = seed + index
-        path = output / safe_filename(style, artwork_seed)
+        path = output / f"{style}_{config.palette_name}_{artwork_seed}.svg"
         GENERATORS[style](path, artwork_seed, config)
         created.append(path)
 
