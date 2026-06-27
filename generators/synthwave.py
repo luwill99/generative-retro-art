@@ -26,9 +26,14 @@ def generate(path: Path, seed: int, config: ArtConfig) -> Path:
     # keeping the SVG easy to edit after import.
     sun_radius = min(w, h) * 0.19
     for i in range(10):
-        y = horizon - sun_radius + i * sun_radius * 0.2
+        sun_center_y = horizon + sun_radius * 0.05
+        y = sun_center_y - sun_radius + i * sun_radius * 0.2
         stripe_h = sun_radius * 0.12
-        half_width = math.sqrt(max(0, sun_radius**2 - (y + stripe_h / 2 - horizon) ** 2))
+
+        if y + stripe_h > horizon:
+            continue
+
+        half_width = math.sqrt(max(0, sun_radius**2 - (y + stripe_h / 2 - sun_center_y) ** 2))
         dwg.add(
             dwg.rect(
                 insert=(cx - half_width, y),
